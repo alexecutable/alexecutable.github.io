@@ -25,9 +25,21 @@
     font-style: italic;
 }
 
-.agbalumo-regular {
-    font-family: "Agbalumo", serif;
+.sarina-regular {
+    font-family: "Sarina", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+  }  
+
+nav {
+    background-color: #3E2B14;
+}
+
+.nav-item, .navbar-brand {
+    color: #FCE7C5
+}
+
+/* Need to overwrite Bootstrap default size so we can make the "brand" bigger */
+.navbar-brand {
+    font-size: 2.5rem;
+}
