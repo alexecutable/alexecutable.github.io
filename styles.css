@@ -35,6 +35,11 @@ nav {
     background-color: #3E2B14;
 }
 
+.navbar {
+    /* padding: .5rem 1rem; */
+    padding: .5rem 6rem;
+  }
+  
 .nav-item, .navbar-brand {
     color: #FCE7C5
 }
@@ -43,3 +48,17 @@ nav {
 .navbar-brand {
     font-size: 2.5rem;
 }
+
+.row {
+    background-color: #FCE7C5;
+    color: #3E2B14;
+    font-family: "Atkinson Hyperlegible", 'serif';
+    margin: 2em;
+    padding: 2em;
+  }
+
+.row>.col>.row {
+    margin: 0;
+}
+
+  
