@@ -1,8 +1,5 @@
-.molle-regular-italic {
-    font-family: 'Molle', serif;
-    font-weight: 400;
-    font-style: italic;
-  }
+
+
 
 .atkinson-hyperlegible-regular {
     font-family: 'Atkinson Hyperlegible', serif;
@@ -27,9 +24,15 @@
     font-weight: 700;
     font-style: italic;
 }
-    
-#myname { 
-    font-family: 'Molle', serif;
+
+.sarina-regular {
+    font-family: "Sarina", serif;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
+  }  
+
+#myname { 
+    font-family: "Sarina", serif;
+    font-weight: 400;
+    font-style: normal;
 }
