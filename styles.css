@@ -31,6 +31,11 @@
     font-style: normal;
   }  
 
+
+body {
+    background-color: #3E2B14;
+}
+
 nav {
     background-color: #3E2B14;
 }
@@ -53,12 +58,46 @@ nav {
     background-color: #FCE7C5;
     color: #3E2B14;
     font-family: "Atkinson Hyperlegible", 'serif';
-    margin: 2em;
-    padding: 2em;
+    margin: 2rem;
+    padding: 2rem;
   }
 
 .row>.col>.row {
     margin: 0;
 }
+
+#about {
+    position: relative;
+    z-index: 1;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 
+        1rem 0.5rem 0 0.5rem #FF4D65, 
+        2rem 1rem 0 1rem #FF9C63, 
+        3rem 1.5rem 0 1.5rem #FFE26C;
+    margin-bottom: 6rem;
+    margin-top: 0;
+}
+
+#resume {
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 
+        -1rem 0 0 1rem #FFE26C, 
+        -2rem 0 0 2rem #FF9C63, 
+        -3rem 0 0 3rem #FF4D65;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+}
+
+#portfolio {
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 
+        1rem 0 0 1rem #FF4D65, 
+        2rem 0 0 2rem #FF9C63, 
+        3rem 0 0 3rem #FFE26C;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+
 
   
