@@ -1,6 +1,6 @@
 
 
-
+/*******FONTS*******/
 .atkinson-hyperlegible-regular {
     font-family: 'Atkinson Hyperlegible', serif;
     font-weight: 400;
@@ -31,7 +31,7 @@
     font-style: normal;
   }  
 
-
+/*******ELEMENTS*******/
 body {
     background-color: #3E2B14;
 }
@@ -40,6 +40,7 @@ nav {
     background-color: #3E2B14;
 }
 
+/*******CLASSES*******/
 .navbar {
     /* padding: .5rem 1rem; */
     padding: .5rem 6rem;
@@ -66,19 +67,10 @@ nav {
     margin: 0;
 }
 
-#about {
-    position: relative;
-    z-index: 1;
-    border-radius: 0 1rem 1rem 0;
-    box-shadow: 
-        1rem 0.5rem 0 0.5rem #FF4D65, 
-        2rem 1rem 0 1rem #FF9C63, 
-        3rem 1.5rem 0 1.5rem #FFE26C;
-    margin-bottom: 3rem;
-    margin-top: 0;
-}
+/*******IDs*******/
 
-#resume {
+/*Put these first, these will apply to all even / odd divs that are row children of the container div class*/
+.container>.row:nth-child(even) {
     border-radius: 1rem 0 0 1rem;
     box-shadow: 
         -1rem 0 0 1rem #FFE26C, 
@@ -88,7 +80,7 @@ nav {
     margin-bottom: 3rem;
 }
 
-#portfolio {
+.container>.row:nth-child(odd) {
     border-radius: 0 1rem 1rem 0;
     box-shadow: 
         1rem 0 0 1rem #FF4D65, 
@@ -98,9 +90,10 @@ nav {
     margin-top: 3rem;
 }
 
-#contact {
-    position: relative;
-    z-index: 1;
+/*These must be defined AFTER the above, as they are "special" cases*/
+
+/*ideally, this will have one style if the last-child is even, and another if it is odd*/
+.container>.row:last-child{
     border-radius: 1rem 0 0 1rem;
     box-shadow: 
         -1rem -0.5rem 0 0.5rem #FFE26C, 
@@ -110,6 +103,31 @@ nav {
     margin-top: 0;
 }
 
+.container>.row:first-child {
+    position:relative;
+}
 
+.container>.row:first-child::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -50%;
+    width: 150%;
+    border-top: 1rem solid #FFE26C;
+    border-bottom: 1rem solid #FF4D65;
+    background: #FF9C63;
+    height: 3rem;
+    top: -3rem;
+}
+
+/* .container>.row:first-child {
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 
+        1rem 0.5rem 0 0.5rem #FF4D65, 
+        2rem 1rem 0 1rem #FF9C63, 
+        3rem 1.5rem 0 1.5rem #FFE26C;
+    margin-bottom: 3rem;
+    margin-top: 0;
+} */
 
   
