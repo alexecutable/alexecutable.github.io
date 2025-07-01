@@ -40,6 +40,10 @@ nav {
     background-color: #3E2B14;
 }
 
+a.active {
+    text-transform: uppercase;
+}
+
 /*******CLASSES*******/
 .navbar {
     /* padding: .5rem 1rem; */
@@ -53,6 +57,12 @@ nav {
 /* Need to overwrite Bootstrap default size so we can make the "brand" bigger */
 .navbar-brand {
     font-size: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 80%;
+    }
 }
 
 .row {
@@ -99,9 +109,8 @@ https://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/demo/bor
     position: relative;
 }
 
-/*ideally, in the future this will style the stripe to the right if the last-child is even, 
-and style the last stripe to the left if the child is odd*/
-.container > .row:last-child::after {
+/*If the last .row on the page is an even n, then the stripe should go off to the right*/
+.container>.row:nth-last-child(1):nth-child(even)::after {
     content: "";
     display: block;
     position: absolute;
@@ -109,6 +118,20 @@ and style the last stripe to the left if the child is odd*/
     width: 150%;
     border-top: 1rem solid #FFE26C;
     border-bottom: 1rem solid #FF4D65;
+    background: #FF9C63;
+    height: 3rem;
+    bottom: -3rem;
+  }
+
+/*If the last .row on the page is an odd n, then the stripe should go off to the left*/
+.container>.row:nth-last-child(1):nth-child(odd)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -50%;
+    width: 150%;
+    border-top: 1rem solid #FF4D65;
+    border-bottom: 1rem solid #FFE26C;
     background: #FF9C63;
     height: 3rem;
     bottom: -3rem;
