@@ -110,7 +110,7 @@ https://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/demo/bor
 }
 
 /*If the last .row on the page is an even n, then the stripe should go off to the right*/
-.container>.row:nth-last-child(1):nth-child(even)::after {
+.container>.row:last-child:nth-child(even)::after {
     content: "";
     display: block;
     position: absolute;
@@ -124,7 +124,7 @@ https://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/demo/bor
   }
 
 /*If the last .row on the page is an odd n, then the stripe should go off to the left*/
-.container>.row:nth-last-child(1):nth-child(odd)::after {
+.container>.row:last-child:nth-child(odd)::after {
     content: "";
     display: block;
     position: absolute;
@@ -154,25 +154,35 @@ https://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/demo/bor
     top: -3rem;
 }
 
-img {
+.headshot {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
+}
+
+.palette {
+    width: 100px;
+    height:100px;
+}
+
+#preview {
+    height: 25rem;
+    background-image: url("../img/portfolio/swervesbar/swervesbarfinal.png");
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+
+.sketch {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: 50% 0%;
 }
 
 .row>.col>.row {
     margin: 0;
     padding: 0.5em;
 }
-/*makes the stripes start at the top of the first div */
-/* .container>.row:first-child {
-    border-radius: 0 1rem 1rem 0;
-    box-shadow: 
-        1rem 0.5rem 0 0.5rem #FF4D65, 
-        2rem 1rem 0 1rem #FF9C63, 
-        3rem 1.5rem 0 1.5rem #FFE26C;
-    margin-bottom: 3rem;
-    margin-top: 0;
-} */
+
 
   
