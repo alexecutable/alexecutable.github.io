@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sarina&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+
+    <title>Alex LeClerc</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="nav-item nav-link atkinson-hyperlegible-bold active" href="index.html">about <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link atkinson-hyperlegible-bold" href="resume.html">resume</a>
+        <h3 class="navbar-brand mb-0 h1 sarina-regular">
+            Alex LeClerc
+        </h3>
+        <a class="nav-item nav-link atkinson-hyperlegible-bold" href="portfolio.html">portfolio</a>
+        <a class="nav-item nav-link atkinson-hyperlegible-bold" href="contact.html">contact</a>
+    </nav>
+
+    <div id="outer" class="container">
+        <div id="overview" class="row">
+            <div class="col">
+                <h2>Overview</h2>
+                    I wanted this website to both be an overview of my work, as well as a place to publish more in-depth descriptions of all of the ways I create.
+                    It is also a first impression, communicating both my personal style and projects.
+                    This design has lived for a while in my notebooks, post-its, and unpublished HTML files stored locally on my computer.
+                    This website has changed iteratively over time, but I have created something I am content with, and feel that it reflects my body of work.
+            </div>
+        </div>
+
+        <div id="drafts" class="row">
+            <div class="col">
+                <h2>Drafts</h2>
+                    <div class="row">
+                        The first drafts of this website where on paper, using what highlighters I had available on hand as a placeholder to workout the layout without getting caught up in the details.
+                        I had played around with stripes of color as dividers across sections (like horizontal rulings).
+                        Ultimately, I liked the retro, mod feel of the connected stripes weaving through the page in this sketch:
+                        [IMG HERE]
+
+                        I love color. However, bright colors can easily be overwhelming.
+                        I wanted this website to have pops of color, while still being easily readable.
+                        I borrow inspiriation from the color palettes of retro mod-style print from the 60s and 70s, pairing bright colors with warm neutrals to create a pleasing analogous color scheme.
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="palette" id="colorred">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="palette" id="colororange">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="palette" id="coloryellow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+            </div>
+        </div>
+
+        <div id="prototypes" class="row">
+            <div class="col">
+                <h2>Prototypes</h2>
+                    I attempted to take my sketch and color palette to figma to figure out how this idea would translate digitally.
+                    [THUMBNAIL]
+                    Within this prototype I was able to tweak the colors for nice contrast against each other as well as the screen.
+                    At this point, I did not know how exactly I was going to accomplish the border stripes, intially assuming I would have to create custom SVG images and align them as a border image on the div elements.
+                    I sought out some blogs that cover niche and interesting ways that CSS borders, box-shadows, and outlines (<a href=https://webdesign.tutsplus.com/css-refreshers-borders--net-24655t>[such as this blog]</a> or <a href=https://weston.ruter.net/2009/06/15/multiple-borders-via-css-box-shadow/>[this blog]</a>) can be used to create multi-layered stripes. 
+                    Thankfully, I was able to create the effect I wanted using pure CSS, which I always prefer for better cross-compatability and to reduce the number of objects that might fail or break.
+                    I am pleased that I was able to use pure HTMl and CSS for all of the website features and aesthetics. 
+                    For instance, if you use your cursor to highlight my name at the top of the navbar, it is embedded text that can be copy and pasted (and read by screen readers).
+            </div>
+        </div>
+
+        <div id="final" class="row">
+            <div class="col">
+                <h2>Final</h2>
+                    If you're reading this, you are on the final and live version of this website. :)
+                    
+                    For this website, I was aiming for elegance in both the aesthetics and the functionality.
+                    Aesthetically, I chose bright colors and contrasted on a dark background for something that reads like a dark-mode theme (on a browser or code editor).
+                    Functionally, I crafted the website to be easy to read and logical to navigate.
+                    I was careful of the information system, with pages that start as big overviews, and link down to specific projects with more detail for those who seek it.
+                    
+                    I wanted high-contrast against the background and text, and I chose to use the font Atkinson Hyperlegible for both ease of use and accessibility.
+                    I kept the back-end simple and use plain HTML/CSS wherever possible (such as the pure-CSS borders and embedded fonts). 
+                    I find that each project needs different frameworks and environments depending on the functionality, and I try to keep complexity to a minimum wherever possible.
+
+                    The source code for this project is hosted on GitHub <a href="https://github.com/alexecutable/alexecutable.github.io">[here]</a>.
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
