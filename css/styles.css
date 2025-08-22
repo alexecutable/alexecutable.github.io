@@ -96,6 +96,9 @@ a.active {
     height: 100%;
 }
 
+.polaroid-img {
+    position: relative;
+}
 .polaroid-description {
     padding: 1rem;
     margin-bottom: 0;
@@ -115,7 +118,7 @@ a.active {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-image: linear-gradient(to bottom right, #FF4D65E5, #FF9C63E5, #FFE26CE5);
+    background-image: linear-gradient(to bottom right, #FF4D65CC, #FF9C63CC, #FFE26CCC);
 }
 
 .overlay-text {
