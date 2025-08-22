@@ -37,6 +37,15 @@ body {
     color: #FCE7C5;
 }
 
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
 nav {
     background-color: #3E2B14;
 }
@@ -70,11 +79,56 @@ a.active {
     padding: 2rem;
   }
 
+.col {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .row>.col>.row {
     margin: 0;
 }
 
-/*******IDs*******/
+.polaroid {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    color: #3E2B14;
+    position: relative;
+    height: 100%;
+}
+
+.polaroid-description {
+    padding: 1rem;
+    margin-bottom: 0;
+    
+}
+
+.polaroid:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: linear-gradient(to bottom right, #FF4D65E5, #FF9C63E5, #FFE26CE5);
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 /*Put these first, these will apply to all even / odd divs that are row children of the container div class*/
 .container>.row:nth-child(even) {
